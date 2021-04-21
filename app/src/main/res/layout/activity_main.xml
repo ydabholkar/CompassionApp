@@ -1,0 +1,633 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/main_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+        </com.google.android.material.appbar.MaterialToolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <!-- My Layout -->
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="300dp"
+    android:background="@drawable/kid"
+    >
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:paddingBottom="18dp">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/l1"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="WE RISE"
+                android:textStyle="bold"
+                android:textSize="25sp"
+                android:textColor="#FFFFFF"
+                android:paddingLeft="18dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" AS ONE"
+                android:textSize="25sp"
+                android:textColor="#FFFFFF"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/l1"
+            android:orientation="horizontal"
+            android:layout_alignParentBottom="true">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CORONAVIRUS"
+                android:background="#441893"
+                android:textSize="20sp"
+                android:layout_marginLeft="18dp"
+                android:textColor="#FFFFFF"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" RESPONSE"
+                android:textSize="20sp"
+                android:background="@color/black"
+                android:textColor="#FFFFFF"/>
+
+
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:text="Learn more about how we're"
+                android:textColor="#0000FF"
+                android:gravity="center"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="responding to COVID-19"
+                android:textColor="#0000FF"
+                android:gravity="center"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tell me more"
+                        android:id="@+id/l2"
+                        android:layout_centerInParent="true"
+                        android:textSize="20dp"/>
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/l2"
+                        android:src="@drawable/arrow"
+                        android:paddingTop="10dp"/>
+            </RelativeLayout>
+        </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="8dp"
+                android:orientation="vertical"
+                android:id="@+id/shadow"
+                android:background="@drawable/shadow"></LinearLayout>
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+                    <LinearLayout
+                        android:layout_width="190dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:id="@+id/first"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentLeft="true">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="New Sponsorship"
+                            android:gravity="center"
+                            android:background="#FFC107"
+                            android:textColor="#FFFFFF"/>
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/kid"
+                            android:scaleType="centerCrop"
+                            />
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#FFC107">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Reagale"
+                                android:layout_centerInParent="true"
+                                android:id="@+id/l3"
+                                android:textColor="#FFFFFF"/>
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_toRightOf="@id/l3"
+                                android:src="@drawable/arrow2"/>
+                        </RelativeLayout>
+                    </LinearLayout>
+
+
+
+                        <LinearLayout
+                            android:layout_width="190dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:id="@+id/second"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentRight="true">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Johanna"
+                                android:background="#1F9524"
+                                android:textColor="#FFFFFF"
+                                android:padding="10dp"/>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="  Birthday in 2 months"
+                                android:background="#1F9524"
+                                android:paddingBottom="10dp"
+                                android:textColor="#FFFFFF"/>
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="#36B53C">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text=" Give a gift"
+                                    android:id="@+id/l4"
+                                    android:textColor="#FFFFFF"/>
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_toRightOf="@id/l4"
+                                    android:src="@drawable/arrow2"/>
+                            </RelativeLayout>
+                        </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="190dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:id="@+id/fourth"
+                        android:layout_alignParentLeft="true"
+                        android:layout_below="@id/first"
+                        android:paddingTop="10dp">
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="100dp"
+                            android:src="@drawable/group"
+                            android:scaleType="centerCrop"/>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:background="#263238">
+                        <TextView
+                            android:paddingTop="10dp"
+                            android:paddingLeft="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="How to use Amazon"
+                            android:textColor="#FFFFFF"/>
+                            <TextView
+                                android:paddingLeft="10dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="smile and give as you"
+                                android:textColor="#FFFFFF"/>
+                            <TextView
+                                android:textColor="#FFFFFF"
+                                android:paddingLeft="10dp"
+                                android:paddingBottom="10dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="live"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="190dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_alignParentRight="true"
+                        android:paddingTop="10dp"
+                        android:id="@+id/third"
+                        android:layout_below="@id/second">
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#567E28">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text=" Weather          "
+                                android:id="@+id/l5"
+                                android:textColor="#FFFFFF"/>
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_toRightOf="@id/l5"
+                                android:src="@drawable/arrow2"/>
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="10dp"
+                            android:background="#EFEDE9">
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:id="@+id/weather"
+                                android:layout_alignParentLeft="true">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text=" Weybridge"/>
+                                <ImageView
+                                    android:layout_width="50dp"
+                                    android:layout_height="50dp"
+                                    android:src="@drawable/cloud"/>
+                            </LinearLayout>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_toLeftOf="@id/weather"
+                                android:layout_alignParentRight="true"
+                                android:textSize="25sp"
+                                android:layout_centerVertical="true"
+                                android:paddingRight="50dp"
+                                android:text="9°C"
+                                />
+                        </RelativeLayout>
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:background="#EFEDE9"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="10dp">
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:id="@+id/weather2"
+                                android:layout_alignParentLeft="true">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text=" Peru"
+                                    android:paddingBottom="5dp"/>
+                                <ImageView
+                                    android:layout_width="50dp"
+                                    android:layout_height="50dp"
+                                    android:src="@drawable/sun"/>
+                            </LinearLayout>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_toLeftOf="@id/weather2"
+                                android:layout_alignParentRight="true"
+                                android:textSize="25sp"
+                                android:layout_centerVertical="true"
+                                android:paddingRight="50dp"
+                                android:text="22°C"
+                                />
+                        </RelativeLayout>
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#567E28">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text=" My community"
+                                android:id="@+id/l6"
+                                android:textColor="#FFFFFF"/>
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_toRightOf="@id/l6"
+                                android:src="@drawable/arrow2"/>
+                        </RelativeLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="190dp"
+                        android:id="@+id/seventh"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_below="@id/third"
+                        android:layout_alignParentRight="true"
+                        android:paddingTop="10dp">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="   New Photo"
+                            android:background="#FFC107"
+                            />
+                       <RelativeLayout
+                           android:layout_width="match_parent"
+                           android:layout_height="300dp"
+                           android:background="@drawable/group">
+                           <TextView
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:layout_alignParentBottom="true"
+                               android:padding="10dp"
+                               android:textColor="#FFFFFF"
+                               android:textStyle="bold"
+                               android:text="Sergio"/>
+
+                       </RelativeLayout>
+
+
+                    </LinearLayout>
+                <LinearLayout
+                    android:layout_width="190dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:id="@+id/fifth"
+                    android:paddingTop="10dp"
+                    android:layout_below="@id/fourth"
+                    android:layout_alignParentLeft="true">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Sergio"
+                        android:textStyle="bold"
+                        android:background="#4E0B22"
+                        android:textColor="#FFFFFF"
+                        android:padding="10dp"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingBottom="20dp"
+                        android:background="#4E0B22"
+                       >
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Give thanks that Sergio"
+                            android:background="#4E0B22"
+                            android:paddingLeft="10dp"
+                            android:textColor="#FFFFFF"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="recieves regular home"
+                            android:background="#4E0B22"
+                            android:paddingLeft="10dp"
+                            android:textColor="#FFFFFF"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="visits from caring"
+                            android:background="#4E0B22"
+                            android:paddingLeft="10dp"
+                            android:textColor="#FFFFFF"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="project staff."
+                            android:background="#4E0B22"
+                            android:paddingLeft="10dp"
+                            android:textColor="#FFFFFF"/>
+
+
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#732640"
+                        android:paddingTop="2dp"
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="10dp"
+                            android:text="Pray now   "
+                            android:id="@+id/l7"
+                            android:textColor="#FFFFFF"/>
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@id/l7"
+                            android:src="@drawable/arrow2"/>
+                    </RelativeLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="190dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@id/fifth"
+                    android:paddingTop="10dp"
+                    android:orientation="vertical"
+                    android:id="@+id/sixth">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Thank you"
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:textColor="#DD880B"
+                        android:background="#EFEDE9"
+                        android:padding="10dp"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="5 gifts given this year"
+                        android:background="#EFEDE9"
+                        android:textColor="@color/black"
+                        android:paddingBottom="20dp"
+                        android:paddingLeft="10dp"/>
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#DD880B"
+                        android:paddingTop="2dp"
+                        >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="10dp"
+                        android:text="My children  "
+                        android:id="@+id/l8"
+                        android:textColor="#FFFFFF"/>
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/l8"
+                        android:src="@drawable/arrow2"/>
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+                <RelativeLayout
+                    android:layout_width="190dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@id/sixth"
+                    android:background="#3F51B5"
+                    android:layout_marginTop="10dp"
+                    android:paddingBottom="10dp"
+                    >
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_alignParentLeft="true">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Sergio"
+                            android:textColor="#FFFFFF"
+                            android:padding="10dp"
+                            android:textStyle="bold"
+                            android:textSize="16sp"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:textColor="#FFFFFF"
+                            android:layout_height="wrap_content"
+                            android:text="3 years of"
+                            android:paddingLeft="10dp"
+                            android:paddingBottom="2dp"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="#FFFFFF"
+                            android:text="sponsership"
+                            android:paddingLeft="10dp"
+                            android:paddingBottom="2dp"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:textColor="#FFFFFF"
+                            android:layout_height="wrap_content"
+                            android:text="thank You"
+                            android:paddingLeft="10dp"
+                            android:paddingBottom="2dp"
+                            />
+                    </LinearLayout>
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:src="@drawable/kid"
+                        android:scaleType="centerCrop"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:paddingRight="10dp"/>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="190dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_height="170dp"
+                    android:background="@drawable/group"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@id/seventh">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/play"
+                        android:layout_centerVertical="true"
+                        android:layout_centerHorizontal="true"
+                        />
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_alignParentBottom="true"
+                        android:paddingLeft="10dp"
+                        android:paddingBottom="10dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Join our Togo Ghana"
+                            android:textColor="#FFFFFF"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Insight trip"
+                            android:textColor="#FFFFFF"
+                            />
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
